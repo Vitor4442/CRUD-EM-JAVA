@@ -13,7 +13,8 @@ import lombok.*;
 
 public class Usuario {
 
-    @id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     @Column(name = "email", unique = true)
